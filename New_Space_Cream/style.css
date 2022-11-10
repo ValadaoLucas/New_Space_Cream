@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  
+
+  width: 1280px;
+  height: 720px;
+  
+}
+
+header {
+
+width: 377px;
+height: 753px;
+
+padding-top: 32px;
+padding-bottom: 125px;
+background: #8E9AAF;
+
+animation: appear;
+animation-duration: 2000ms;
+}
+
+header img{ 
+margin: 32px 81px;
+
+}
+
+header h1 {
+font-family: 'Staatliches';
+font-size: 48px;
+
+color: #FFFFFF;
+
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+text-align: center;
+
+background: #CBC0D3;
+
+}
+
+.description {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  
+  margin-top: 32px;
+  margin-left: 54px;
+  margin-right: 48px;
+
+  text-align: center;
+
+}
+
+.page main {
+  display: grid;
+  gap: 32px;
+  margin: 64px 0 50px 0;
+  padding: auto 100px 0;  
+  
+  grid-template-areas: 
+  "paleta milkshake paleta2"
+  "picole milkshake picole2"
+  "picole massa picole2"
+}
+
+main .card {
+  margin: 0;
+  animation-name: appear;
+  animation-duration: 5000ms;
+  
+}
+
+.page {
+  width: 1280px;
+  height: 720px;
+  margin: 0 81px 50px;
+
+}
+
+.page img {
+  max-width: 250px;
+  max-height: 350px;
+}
+
+main div:nth-child(1) {
+  grid-area: paleta;
+}
+
+main div:nth-child(2) {
+  grid-area: milkshake;
+}
+
+main div:nth-child(3) {
+  grid-area: massa;
+}
+
+main div:nth-child(4) {
+  grid-area: picole;
+}
+
+main div:nth-child(5) {
+  grid-area: paleta2;
+}
+
+main div:nth-child(6) {
+  grid-area: picole2;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card h2 {
+  font-family: 'Palanquin';
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+}
+
+.card h2 span {
+  background: #CBC0D3;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.page footer {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #4A4E69;;
+
+}
+
+.page footer span {
+  font-weight: bold;
+
+}
+
+footer a:hover {
+  color: #1e34af;;
+
+}
+
+.card:hover {
+  opacity: 0.5;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  
+
+
+  100% {
+    opacity: 1;
+  }
+}
